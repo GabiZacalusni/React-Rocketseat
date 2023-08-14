@@ -81,7 +81,7 @@ export function Post({ author, publishedAt, content }) {
           {comments.map(comment => {
             return (
               // eslint-disable-next-line react/jsx-key
-              <Comment content={comment}/>
+              <Comment key={comment} content={comment}/>
             );
           })}
 
